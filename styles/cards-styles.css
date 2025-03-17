@@ -1,0 +1,156 @@
+.cards-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+	margin-inline: 60px;
+	margin-block: 6px;
+}
+
+.card {
+	margin-inline: 15px;
+	margin-block: 10px;
+	text-align: center;
+
+	border-radius: 15%;
+	overflow: hidden;
+
+    background: #efe5e5;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+	width: 100%;
+	border-radius: 14%;
+}
+
+.card h2 {
+	margin: 2px;
+	color: black;
+}
+
+.card p {
+	margin: 0;
+}
+
+.price-and-buy {
+	display: flex;
+	
+	margin-block: 10px;
+
+	align-items:center;
+	justify-content: center;
+	gap: 5px;
+}
+
+.price-and-buy span {
+	font-size: 24px;
+	color: #f26327;
+}
+
+.price-and-buy button {
+    cursor: pointer;
+    padding: 10px;
+	margin-left: 5px;
+	
+    border: none;
+    border-radius: 5px;
+
+    background: #0260bf;
+    color: white;
+	font-size: 15px;
+}
+
+.leaflet-popup-content-wrapper, 
+.leaflet-popup-tip {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.leaflet-popup-close-button {
+	display: none;
+}
+
+.map-card {
+	margin-inline: 15px;
+	margin-block: 10px;
+	padding: 5px;
+
+	text-align: center;
+
+	border-radius: 15%;
+	border-style: solid;
+	background: #efe5e5;
+}
+
+.map-card h2 {
+	margin: 2px;
+	margin-bottom: 5px;
+
+	color: black;
+}
+
+.map-card p {
+	margin: 0;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.price-and-buy button:hover {
+	background: #0253a4;
+}
+
+.Kotor-image:hover {
+	content: url('../images/Kotor2.png');
+}
+
+.Zadar-image:hover {
+	content: url('../images/Zadar2.png');
+}
+
+.Ravenna-image:hover {
+	content: url('../images/Ravenna2.png');
+}
+
+.Palma-image:hover {
+	content: url('../images/Palma2.png');
+}
+
+.Herceg-Novi-image:hover {
+	content: url('../images/Herceg-Novi2.png');
+}
+
+.Venice-image:hover {
+	content: url('../images/Venice2.png');
+}
+
+.Marseille-image:hover {
+	content: url('../images/Marseille2.png');
+}
+
+.Barcelona-image:hover {
+	content: url('../images/Barcelona2.png');
+}
+
+.Durres-image:hover {
+	content: url('../images/Durres2.png');
+}
+
+
+@media (max-width: 800px) {
+	.cards-container {
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+}
+
+@media (max-width: 600px) {
+	.cards-container {
+		grid-template-columns: repeat(1, 1fr);
+
+	}
+}
