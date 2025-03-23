@@ -58,7 +58,7 @@
 	background: #271c1c;
 }
 
-.about-us img {
+/* .about-us img {
 	display: block;
 	margin-left: 10px;
 
@@ -66,7 +66,82 @@
 
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 	border-radius: 30px;
+} */
+
+.map-container {
+	position: relative;
+    display: flex;
+
+	margin: 0;
+	margin-left: 10px;
+
+	width: 500px;
+	height: 90%;
+
+    justify-content: center;
+	transition: transform 0.3s ease-in-out;
 }
+
+.map-container.scale {
+    transform: scale(1.05);
+}
+
+#map-overlay {
+	display: flex;
+    position: absolute;
+
+    width: 90%;
+    height: 100%;
+    z-index: 9999;
+
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background: rgba(154, 63, 63, 0.4);
+    cursor: pointer;
+}
+
+#map-overlay p {
+	margin: 0;
+
+	font-size: 15px;
+	color: black;
+	font-weight: bold;
+}
+
+#map {
+    width: 90%;
+    height: 100%;
+
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.map-card {
+	margin-inline: 15px;
+	margin-block: 10px;
+	padding: 5px;
+
+	text-align: center;
+
+	border-radius: 10px;
+	border-style: solid;
+	background: #efe5e5;
+}
+
+.map-card h2 {
+	margin: 2px;
+	margin-bottom: 5px;
+
+	color: black;
+}
+
+.map-card p {
+	margin: 0;
+}
+
 
 .contacts {
 	display: flex;

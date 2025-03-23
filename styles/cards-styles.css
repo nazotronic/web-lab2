@@ -61,17 +61,6 @@
 	font-size: 15px;
 }
 
-.leaflet-popup-content-wrapper, 
-.leaflet-popup-tip {
-    background: transparent !important;
-    box-shadow: none !important;
-    border: none !important;
-}
-
-.leaflet-popup-close-button {
-	display: none;
-}
-
 .map-card {
 	margin-inline: 15px;
 	margin-block: 10px;
