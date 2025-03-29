@@ -160,6 +160,10 @@ function reserveTour(tour) {
 		reservedTours.push(tour);
 		localStorage.setItem("reservedTours", JSON.stringify(reservedTours));
 		
-		alert("Tour reserved!");
+		window.location.href = "bookings.html";
+	}
+
+	else {
+		alert("Tour is already reserved!");
 	}
 }
